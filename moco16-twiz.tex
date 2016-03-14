@@ -24,6 +24,7 @@
 \usepackage{graphics} % for EPS, load graphicx instead
 \usepackage{times}    % comment if you want LaTeX's default font
 \usepackage{url}      % llt: nicely formatted URLs
+\usepackage{float}    % To allow forcing figure position
 
 % llt: Define a global style for URLs, rather that the default one
 \makeatletter
@@ -124,7 +125,16 @@ be measured from the movement of everyday objects.
 Here an autonomous, tiny and wireless motion sensor
 is attached to a range of custom-built physical
 extensions to record acceleration and orientation of an
-object in various situations. The transmitted data is
+object in various situations.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{pics/extensions}
+\caption{Motion Sensing Extensions.}
+\label{fig:extensions}
+\end{figure}
+
+The transmitted data is
 then expressed through an audio or visual medium in
 real time or as a recording for further evaluation. With
 the Internet of Things at our doorsteps, this project
@@ -148,6 +158,16 @@ of the wind swaying through the leaves, a block of
 foam to allow the Twiz to float on the surface of water
 or a cylindrical shaped piece of plastic to roll the Twiz
 along different types of surfaces.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{pics/fieldtrip}
+\caption{The Twiz motion sensor mounted onto a Motion
+Sensing Extension (left), and attached to the branch of
+a tree to capture the movement of the wind swaying through
+the leaves (right).}
+\label{fig:fieldtrip}
+\end{figure}
 
 \section{Autonomous, Tiny, Wireless Technology}
 
@@ -204,6 +224,14 @@ express them artistically. We have tested the
 Movement of Things in two different scenarios, a
 recorded and a real-time scenario.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{pics/renderings}
+\caption{Abstract data renderings using data recordings
+captured with the Twiz motion sensor.}
+\label{fig:renderings}
+\end{figure}
+
 \subsection{Recording Scenario}
 The recorded scenario took place in May 2015 in Paris
 where various subjects found in an urban environment
@@ -212,6 +240,8 @@ machine, dryer, escalator, trees, water, doors or the
 metro. Later, the recorded data was interpreted
 through abstract data renderings and translated into a
 kinetic object animated by data recordings.
+
+
 
 \subsection{Real-time Scenario}
 The real-time scenario comprised of a dance
@@ -231,6 +261,14 @@ both equipped with a Twiz. Each object responded with
 an audio-visual feedback based on the motion
 measured to materialize movement [1] through
 custom-built software.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\columnwidth]{pics/performance}
+\caption{A dancer holding an object equipped with a Twiz to
+interact with the light and sound responsive stage design.}
+\label{fig:performance}
+\end{figure}
 
 \section{Conclusion}
 
