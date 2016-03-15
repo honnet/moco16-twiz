@@ -171,15 +171,22 @@ the leaves (right).}
 
 \section{Autonomous, Tiny, Wireless Technology}
 
-The Twiz, a Tiny Wireless IMU, is an open source project
-that gathers three 3D inertial sensors (9D). The
-sensors are an accelerometer for linear accelerations,
-a gyroscope for angular velocity and a magnetometer for
-orientation reference. A fusion of the sensors data is
-performed on board. It uses efficient algorithms to
+Different 9 Degrees of Freedom Inertial Measurement Units
+(IMU) exist, S. Madgwick\cite {madgwick} developed an
+efficient sensor fusion but his hardware was not compact
+enough for most use cases and an extra module was needed
+to add wireless connectivity.
+On a more commercial side, the Hot Hand\footnote
+{\url{http://sourceaudio.net/products/hothand}} has the compactness
+and autonomy but it only has a 3D accelerometer and the
+connectivity is limited.
+Then was made the Twiz, the Tiny Wireless IMU, as an open
+source project that gathers three 3D inertial sensors
+(accelerometer, gyroscope and magnetometer).
+A fusion of the sensors data is performed on board.
+It uses and adaptation of Madgwick algorithm to
 merge the stability of the magnetometer and the
-dynamism of the gyroscope, allowing the calculation of
-an accurate 3D heading. After being processed, this
+dynamism of the gyroscope. After being processed, this
 data is broadcasted wirelessly using a Bluetooth Low
 Energy (BLE) advertising hack that uses manufacturer
 data, which simplifies the reception as it avoids
@@ -288,15 +295,6 @@ over time and how the limitations and the potential can
 inform a range of artistic practices through
 performance, play and exploration.
 
-\section{Presentation}
-
-The presentation of this project comprises of a selection
-of printed abstract data renderings, a series of Motion
-Sensing Extensions, and an interactive sound and light
-structure to demonstrate the current state of the
-Movement of Things project. A video is also available here:\\
-{\url{https://vimeo.com/143536986}}
-
 \section{Acknowledgements}
 
 ...\\
@@ -304,6 +302,6 @@ Movement of Things project. A video is also available here:\\
 
 \balance
 
-\bibliographystyle{acm-sigchi}
+\bibliographystyle{unsrt}
 \bibliography{references}
 \end{document}
