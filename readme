@@ -1,0 +1,13 @@
+MOCO 2016 - Twiz
+================
+
+Dependencies
+------------
+
+    apt-get install texlive evince
+
+Compilation + opening
+---------------------
+
+    make
+
